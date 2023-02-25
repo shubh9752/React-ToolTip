@@ -6,6 +6,8 @@ About Tooltip Project
 
 -on hovering over div that appear after you press button will show you the direction respective to your side (like LHS(west) and RHS(east))
 
+hosting link: https://keen-ganache-da9eca.netlify.app/
+
 
 
 
