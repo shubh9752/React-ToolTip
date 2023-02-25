@@ -1,3 +1,14 @@
+About Tooltip Project
+
+-This is a simple tooltip project which show you the direction or position
+
+- On hovering the direction button a div is apper which tells you on which button you clicked.
+
+-on hovering over div that appear after you press button will show you the direction respective to your side (like LHS(west) and RHS(east))
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

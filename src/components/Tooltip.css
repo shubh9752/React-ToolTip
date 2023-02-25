@@ -1,0 +1,139 @@
+.container {
+    
+    position: relative;
+    width: auto;
+    margin: 10% auto;
+  
+  }
+  
+  .button {
+    border: transparent;
+    background: rgb(36, 132, 187);
+    margin:10% auto;
+    font-family: cursive;
+    font-size: 2rem;
+    font-style: oblique;
+    color: #eaeaf7;
+    font-weight: 700;
+    border: 2px solid #191e87;
+  }
+  
+  .tooltip {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 10rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-shadow: none;
+    display: inline-block;
+    line-height: 2;
+    text-align: left;
+    text-align: start;
+    animation: tooltipAnimation 1s ease-in-out infinite alternate-reverse ;
+  }
+  
+  .east {
+    position: absolute;
+    margin-left: 125%;
+    margin-top: 10%;
+  }
+  
+  .west {
+    position: absolute;
+    margin-left:-198%;
+    margin-top: 10%;
+    /* border-radius: 76% 15% 2% 81% / 46% 0% 36% 52% ; */
+  }
+  
+  .north {
+    position: absolute;
+    margin-top: -47%;
+    margin-left: -38%;
+  }
+  
+  .south {
+    position: absolute;
+    margin-top: 70%;
+    margin-left: -38%;
+  }
+  
+  .tooltip-pointer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-right-color: #000;
+    border-color: transparent;
+    border-right-color: transparent;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+   
+    border-style: solid;
+  }
+  
+  .tooltip.east .tooltip-pointer {
+    top: 50%;
+    left: auto;
+    margin-left: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: rgb(50, 210, 25);
+  }
+  
+  .tooltip.north .tooltip-pointer {
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: rgb(161, 198, 26);
+  }
+  
+  .tooltip.west .tooltip-pointer {
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 76% 15% 2% 81% / 46% 0% 36% 52% ;
+    border-width: 5px 0 5px 5px;
+    border-left-color: rgb(42, 51, 219);
+    right: -5px;
+    left: auto;
+  }
+ 
+  
+  
+  .tooltip.south .tooltip-pointer {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: rgb(221, 142, 14);
+  }
+  
+  .tooltip .tooltip-label {
+    font-size: 1.1rem;
+    max-width: 200px;
+    padding: 2px 19px;
+    color: rgb(13, 64, 206);
+    text-align: center;
+    background-color: rgb(19, 144, 166);
+    border-radius: 4px;
+  }
+  
+ 
+  @keyframes tooltipAnimation {
+    0% {
+      transform: rotate(2deg);
+    }
+  
+    25% {
+      transform: rotate(-2deg);
+    }
+  
+    50% {
+      transform: rotate(2deg);
+    }
+  
+    100% {
+      transform: rotate(-2deg);
+    }
+  }

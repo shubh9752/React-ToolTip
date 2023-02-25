@@ -1,0 +1,56 @@
+.topcontainer{
+    display: inline-block;
+   width: 100%;
+   
+   margin-top: 50px;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 40%;
+    margin: 2% 25%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.heading-text{
+    font-size: 2rem;
+    font-family: cursive;
+    font-style: sans-serif;
+    color: #23acae;
+}
+
+
+.direction-btn{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 0.6;
+    background: transparent;
+    font-size: 1.5rem;
+    padding: 0.5em 0.5em 0.4em;
+    border: 2px dashed rgb(30, 121, 232);
+    border-radius: 42% 42% 0% 10% / 50% 50% 36% 10% ;
+    margin: 3%; 
+    color: rgb(21, 152, 209);
+    text-transform: uppercase;
+}
+
+.direction-btn:hover{
+    background: #1a82afe0;
+    color: rgb(28, 228, 175);
+}
+@media screen and (max-width:500px){
+    .direction-text{
+        font-size: 0.8rem;
+    }
+    .direction-btn{
+        font-size: 0.8rem;
+    }
+}
